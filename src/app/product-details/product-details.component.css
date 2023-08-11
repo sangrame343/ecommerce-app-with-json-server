@@ -1,0 +1,15 @@
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+    color: #3b71ca !important;
+  }
+  
+  .icon-hover:hover i {
+    color: #3b71ca !important;
+  }
+  .product-color {
+    border: 2px solid rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }

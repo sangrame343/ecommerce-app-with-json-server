@@ -1,0 +1,128 @@
+<!-- partial:index.partial.html -->
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <h1>Shopfyy</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+        est sed felis aliquet sollicitudin
+      </p>
+      <span>
+        <p>Sign-up with social media</p>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"
+          ><i class="fa fa-twitter" aria-hidden="true"></i> Login with
+          Twitter</a
+        >
+      </span>
+    </div>
+  </div>
+
+  <div class="right">
+    <div *ngIf="!showUserLogin" class="inputs">
+      <h5>User Sign-up</h5>
+      <a (click)="openUserLogin()"
+        >Already have an account?Login Your Account</a
+      >
+      <form
+        #userSignUp="ngForm"
+        (ngSubmit)="signUpUser(userSignUp.value)"
+        action=""
+      >
+        <input type="text" ngModel name="name" placeholder="Enter Name" #name="ngModel" required />
+        <br />
+        <p class="invalid-input">
+          <span *ngIf="name.invalid && name.touched">
+            Please Enter Your Full Name</span
+          >
+        </p>
+        <input
+          type="email"
+          ngModel
+          name="email"
+          placeholder="Enter Email"
+          required
+          #email="ngModel"
+          email
+        />
+        <br />
+        <p class="invalid-input">
+          <span *ngIf="email.invalid && email.touched">
+            Please Enter Valid email</span
+          >
+        </p>
+        <input
+          type="password"
+          ngModel
+          name="password"
+          placeholder="Enter Password"
+          #password="ngModel"
+          required
+          minlength="8"
+          maxlength="20"
+        />
+
+        <br />
+        <p class="invalid-input">
+          <span *ngIf="password.invalid && password.touched">
+            Please Enter Valid password</span
+          >
+        </p>
+        <br />
+        <br>
+
+        <button [disabled]="userSignUp.invalid">User SignUp</button>
+      </form>
+    </div>
+    <div *ngIf="showUserLogin" class="inputs">
+      <h5>User Login</h5>
+      <p class="error-p">{{ authError }}</p>
+      <a (click)="openUserSignUp()"
+        >Don't have an account? Create Your Account</a
+      >
+
+      <form
+        #userLogin="ngForm"
+        (ngSubmit)="userLogIn(userLogin.value)"
+        action=""
+      >
+        <input
+          type="email"
+          ngModel
+          name="email"
+          placeholder="Enter Email"
+          required
+          #email="ngModel"
+          email
+        />
+        <br />
+        <p class="invalid-input">
+          <span *ngIf="email.invalid && email.touched">
+            Please Enter Valid email</span
+          >
+        </p>
+        <input
+          type="password"
+          ngModel
+          name="password"
+          placeholder="Enter Password"
+          #password="ngModel"
+          required
+          minlength="8"
+          maxlength="20"
+        />
+
+        <br />
+        <p class="invalid-input">
+          <span *ngIf="password.invalid && password.touched">
+            Please Enter Valid password</span
+          >
+        </p>
+        <br />
+
+        <button [disabled]="userLogin.invalid">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- partial -->

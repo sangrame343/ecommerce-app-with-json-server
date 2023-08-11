@@ -1,0 +1,192 @@
+{
+  "seller": [
+    {
+      "name": "sangram",
+      "email": "sangram@tml.ai",
+      "password": "sangram@tml.ai",
+      "id": 2
+    },
+    {
+      "name": "bikram",
+      "email": "bikram@gmail.com",
+      "password": "sangram@tml.ai",
+      "id": 3
+    },
+    {
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "password": "sangram@tml.ai",
+      "id": 4
+    },
+    {
+      "name": "nikhil",
+      "email": "nikhil@gmail.com",
+      "password": "sangram@tm.ai",
+      "id": 5
+    },
+    {
+      "name": "sunil",
+      "email": "sunil@tml.ai",
+      "password": "sangram@tml.ai",
+      "id": 6
+    },
+    {
+      "name": "sahil",
+      "email": "sahil@tml.ai",
+      "password": "sangram@tml.ai",
+      "id": 7
+    },
+    {
+      "name": "sahil",
+      "email": "sahil@tml.ai",
+      "password": "sangram@tml.ai",
+      "id": 8
+    },
+    {
+      "name": "rahil",
+      "email": "rahi@tml.ai",
+      "password": "sangram@tml.ai",
+      "id": 9
+    },
+    {
+      "name": "ajit",
+      "email": "ajit@gmail.com",
+      "password": "sangram@tml.ai",
+      "id": 10
+    },
+    {
+      "name": "jany",
+      "email": "jany@gmail.com",
+      "password": "sangram@tml.ai",
+      "id": 11
+    },
+    {
+      "email": "bikram@gmail.com",
+      "password": "sangram@tml.ai",
+      "id": 12
+    }
+  ],
+  "products": [
+    {
+      "name": "Iphone 14 ",
+      "price": "89999",
+      "color": "silver",
+      "category": "mobile",
+      "description": "Pro camera system 48MP Main Ultra Wide Telephoto Photonic Engine for incredible detail and colour Autofocus on TrueDepth front camera",
+      "image": "https://www.apple.com/v/iphone-14/i/images/key-features/features/size/size_yellow__dnv9794q7loy_large_2x.jpg",
+      "id": 2
+    },
+    {
+      "name": "APPLE iPhone 14 (Midnight, 128 GB)",
+      "price": "69,999",
+      "color": "black",
+      "category": "mobile",
+      "description": "128 GB ROM\n15.49 cm (6.1 inch) Super Retina XDR Display\n12MP + 12MP | 12MP Front Camera\nA15 Bionic Chip, 6 Core Processor Processor",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/9/e/e/-original-imaghx9q5rvcdghy.jpeg?q=70",
+      "id": 3
+    },
+    {
+      "name": "MSI Core i9 13th Gen ",
+      "price": "590990",
+      "color": "black",
+      "category": "Laptop",
+      "description": "Featuring the powerful NVIDIA GeForce RTX 40 Series Laptop GPU, the high-performance MSI Titan GT77 HX Laptop is tailored for gamers and creators. And, with the advanced NVIDIA Ada Lovelace architecture, this laptop delivers exceptional performance. ",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/computer/s/g/x/titan-gt77-hx-13vi-092in-gaming-laptop-msi-original-imagz6bbegpvmr2k.jpeg?q=70",
+      "id": 4
+    },
+    {
+      "name": "APPLE iPhone 14 (Starlight, 128 GB)",
+      "price": "100000",
+      "color": "Starlight",
+      "category": "mobile",
+      "description": "128 GB ROM 15.49 cm (6.1 inch) Super Retina XDR Display 12MP + 12MP | 12MP Front Camera A15 Bionic Chip, 6 Core Processor Processor",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/m/o/b/-original-imaghx9qkugtbfrn.jpeg?q=70",
+      "id": 5
+    },
+    {
+      "name": "APPLE iPhone 14 (Purple, 256 GB)",
+      "price": "55555",
+      "color": "Purple",
+      "category": "mobile",
+      "description": "128 GB ROM 15.49 cm (6.1 inch) Super Retina XDR Display 12MP + 12MP | 12MP Front Camera A15 Bionic Chip, 6 Core Processor Processor",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/b/u/f/-original-imaghxa5hvapbfds.jpeg?q=70",
+      "id": 6
+    },
+    {
+      "name": "Men Solid Hooded Neck Polyester Light Green T-Shirt",
+      "price": "1999",
+      "color": "purpule",
+      "category": "men's Fashion",
+      "description": "Highlander Purple OVER SIZED Casual Unisex T-Shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l13whow0/t-shirt/z/i/c/xl-hlts002025-highlander-original-imagcr26tzcydakz.jpeg?q=70",
+      "id": 8
+    },
+    {
+      "name": "Men Solid Hooded Neck Polyester Light Green T-Shirt",
+      "price": "1999",
+      "color": "purpule",
+      "category": "men's Fashion",
+      "description": "Highlander Purple OVER SIZED Casual Unisex T-Shirt",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/t-shirt/h/i/t/m-hlts002326-highlander-original-imagjsdgdzfexj9w.jpeg?q=70",
+      "id": 10
+    },
+    {
+      "name": "Acer I Series 164 cm (65 inch) Ultra HD ",
+      "price": "49,999",
+      "color": "black",
+      "category": "Smart Android TV",
+      "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube\nOperating System: Android (Google Assistant & Chromecast in-built)\nResolution: Ultra HD (4K) 3840 x 2160 Pixels\nSound Output: 30 W\nRefresh Rate: 60 Hz",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/television/1/o/c/-original-imagp2zqpctngafa.jpeg?q=70",
+      "id": 12
+    },
+    {
+      "name": "Samsung I Series 164 cm (65 inch) Ultra HD ",
+      "price": "120000",
+      "color": "black",
+      "category": "Smart Android TV",
+      "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube\nOperating System: Android (Google Assistant & Chromecast in-built)\nResolution: Ultra HD (4K) 3840 x 2160 Pixels\nSound Output: 30 W\nRefresh Rate: 60 Hz",
+      "image": "https://rukminim2.flixcart.com/image/832/832/l3nco7k0/television/s/q/m/-original-imageq5eptqwxcv8.jpeg?q=70",
+      "id": 13
+    }
+  ],
+  "user": [
+    {
+      "name": "user",
+      "email": "user@test.com",
+      "password": "user@test.com",
+      "id": 1
+    },
+    {
+      "name": "sann",
+      "email": "sann@gmail.com",
+      "password": "sangra@tml.ai",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "APPLE iPhone 14 (Midnight, 128 GB)",
+      "price": "69,999",
+      "color": "black",
+      "category": "mobile",
+      "description": "128 GB ROM\n15.49 cm (6.1 inch) Super Retina XDR Display\n12MP + 12MP | 12MP Front Camera\nA15 Bionic Chip, 6 Core Processor Processor",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/9/e/e/-original-imaghx9q5rvcdghy.jpeg?q=70",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 1
+    },
+    {
+      "name": "APPLE iPhone 14 (Purple, 256 GB)",
+      "price": "55555",
+      "color": "Purple",
+      "category": "mobile",
+      "description": "128 GB ROM 15.49 cm (6.1 inch) Super Retina XDR Display 12MP + 12MP | 12MP Front Camera A15 Bionic Chip, 6 Core Processor Processor",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/b/u/f/-original-imaghxa5hvapbfds.jpeg?q=70",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 6,
+      "id": 2
+    }
+  ]
+}

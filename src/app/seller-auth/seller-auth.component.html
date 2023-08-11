@@ -1,0 +1,72 @@
+<!-- partial:index.partial.html -->
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <h1>Shopfyy</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+        est sed felis aliquet sollicitudin
+      </p>
+      <span>
+        <p>Sign-up with social media</p>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"
+          ><i class="fa fa-twitter" aria-hidden="true"></i> Login with
+          Twitter</a
+        >
+      </span>
+    </div>
+  </div>
+
+  <div class="right">
+    <div *ngIf="!showLogin" class="inputs">
+      <h5>Seller Sign-up</h5>
+      <a (click)="openLogin()">Already have an account?Login Your Account</a>
+      <form
+        #sellerSignUp="ngForm"
+        (ngSubmit)="signUp(sellerSignUp.value)"
+        action=""
+      >
+        <input type="text" ngModel name="name" placeholder="Enter Name" />
+        <br />
+        <input type="email" ngModel name="email" placeholder="Enter Email" />
+        <br />
+        <input
+          type="password"
+          ngModel
+          name="password"
+          placeholder="Enter Password"
+        />
+
+        <br /><br />
+
+        <button>SignUp</button>
+      </form>
+    </div>
+    <div *ngIf="showLogin" class="inputs">
+      <h5>Seller Login</h5>
+      <p class="error-p">{{authError}}</p>
+      <a (click)="openSignUp()">Don't have an account? Create Your Account</a>
+     
+      <form
+        #sellerLogin="ngForm"
+        (ngSubmit)="logIn(sellerLogin.value)"
+        action=""
+      >
+        <input type="email" ngModel name="email" placeholder="Enter Email" />
+        <br />
+        <input
+          type="password"
+          ngModel
+          name="password"
+          placeholder="Enter Password"
+        />
+
+        <br /><br />
+
+        <button>Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- partial -->

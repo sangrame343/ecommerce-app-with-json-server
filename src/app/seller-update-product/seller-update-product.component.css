@@ -1,0 +1,128 @@
+
+.box-form .right {
+    padding: 140px;
+    overflow: hidden;
+  }
+  h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: xxx-large;
+    margin: 0;
+}
+form{
+    text-align: center;
+}
+  @media (max-width: 980px) {
+    .box-form .right {
+      width: 100%;
+    }
+  }
+  .box-form .right h5 {
+    font-size: 2vmax;
+    line-height: 0;
+}
+  .box-form .right p {
+    font-size: 14px;
+    color: #B0B3B9;
+  }
+  .box-form .right .error-p{
+    color: red;
+    font-size: 15px;
+}
+  .box-form .right a{
+    cursor: pointer;
+    color: blueviolet;
+}
+  .box-form .right .inputs {
+    overflow: hidden;
+  }
+  .box-form .right input {
+    width: 400px;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+  }
+  .box-form .right textarea {
+    width: 400px;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+    font-family: sans-serif;
+  }
+  .box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box-form .right .remember-me--forget-password input {
+    margin: 0;
+    margin-right: 7px;
+    width: auto;
+  }
+  .box-form .right button {
+    
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px blueviolet;
+    background-color: blueviolet;
+    /* background-image: linear-gradient(135deg, blueviolet 10%, rgb(215, 172, 255) 100%); */
+  }
+  
+  label {
+    display: block;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  label::before {
+    content: ' \f00c';
+    position: absolute;
+    font-family: sans-serif;
+    background: transparent;
+    border: 3px solid #70F570;
+    border-radius: 4px;
+    color: transparent;
+    left: -30px;
+    transition: all 0.2s linear;
+  }
+  
+  label:hover::before {
+    font-family: sans-serif;
+    content: ' \f00c';
+    color: #fff;
+    cursor: pointer;
+    background: #70F570;
+  }
+  
+  label:hover::before .text-checkbox {
+    background: #70F570;
+  }
+  
+  label span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  
+  label input[type="checkbox"] {
+    display: none;
+  }
+
+ .box-form .right  .message-p{
+      color: green;
+      text-align: center;
+      font-size: 22px;
+  }

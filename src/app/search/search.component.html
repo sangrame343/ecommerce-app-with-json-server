@@ -1,0 +1,39 @@
+<!-- 
+    <div class="row search-item" *ngFor="let item of serachResult" >
+       
+        <div class="col-sm-4">
+          <img
+            src="{{item.image}}"
+            alt=""
+          />
+        </div>
+        <div class="col-sm-4 details">
+          <h6>{{item.name|uppercase}}</h6>
+          <p><b>Price:{{item.price}}</b></p>
+          <p><span>color:{{item.color}}</span> <span>category :{{item.category}}</span></p>
+        
+        </div>
+      </div>
+       -->
+<div *ngIf="!isNotFound">
+  <div class="row search-item" *ngFor="let item of serachResult">
+    <div class="col-sm-4">
+    <a routerLink="/details/{{item.id}}"><img src="{{ item.image }}" alt="" /></a>  
+    </div>
+    <div class="col-sm-4 details">
+      <p> <a  routerLink="/details/{{item.id}}">{{ item.name | uppercase }}</a></p>
+      <p>
+        <b>Price:{{ item.price }}</b>
+      </p>
+      <p>
+        <span>color:{{ item.color }}</span>
+        <span>category :{{ item.category }}</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Display the "not found" message if searchResults are empty -->
+<div *ngIf="isNotFound">
+  <p>Not found</p>
+</div>

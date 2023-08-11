@@ -1,0 +1,32 @@
+table{
+    text-align: left;
+    color: blueviolet;
+    border-collapse: collapse;
+}
+table td ,table th{
+    border: 1px solid blueviolet;
+    padding: 10px;
+    min-height: 160px;
+    text-align: center;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+button {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 8%;
+    border: 1px solid white;
+    height: 30px;
+    width: 73px;
+}
+p .message-p{
+    color: red;
+    font-size: 20px;
+}
+.update-icon{
+    margin-left: 10px;
+    color: blueviolet;
+}

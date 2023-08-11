@@ -1,0 +1,64 @@
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <h1>Add New product</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+        est sed felis aliquet sollicitudin
+      </p>
+    </div>
+  </div>
+
+  <div class="right">
+    <form #addproduct="ngForm" (ngSubmit)="addProduct(addproduct.value)">
+      <div class="inputs">
+        <p class="p-message">{{addProductMessage}}</p>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Product Name"
+          ngModel
+        />
+        <br />
+        <input
+          type="text"
+          name="price"
+          placeholder="Enter Product Price"
+          ngModel
+        />
+        <br />
+        <input
+          type="text"
+          name="color"
+          placeholder="Enter Product Color"
+          ngModel
+        />
+        <br />
+        <input
+          type="text"
+          name="category"
+          placeholder="Enter Product category"
+          ngModel
+        />
+        <br />
+        <textarea
+          type="text"
+          name="description"
+          placeholder="Enter Product Description"
+          ngModel>
+        </textarea>
+
+        <br />
+        <input
+          type="text"
+          name="image"
+          placeholder="Enter Product image url"
+          ngModel
+        />
+        <br />
+      </div>
+      <br />
+      <button>Add product</button>
+    </form>
+  </div>
+</div>
