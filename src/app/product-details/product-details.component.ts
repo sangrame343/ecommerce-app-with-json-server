@@ -12,7 +12,7 @@ export class ProductDetailsComponent {
   productData: undefined | product;
   productQuantity: number = 1;
   removeCart = false;
-  trendyProducts:undefined|product[]
+  trendyProducts: undefined | product[];
   constructor(
     private activeRoute: ActivatedRoute,
     private product: ProductService
@@ -21,10 +21,9 @@ export class ProductDetailsComponent {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
-    //console.warn(productId);
+
     productId &&
       this.product.getProduct(productId).subscribe((result) => {
-        //console.warn(result);
         this.productData = result;
         let cartData = localStorage.getItem('localCart');
         if (productId && cartData) {
@@ -39,9 +38,9 @@ export class ProductDetailsComponent {
           }
         }
       });
-      this.product.trendyProducts().subscribe((data)=>{
-        this.trendyProducts=data;
-      })
+    this.product.trendyProducts().subscribe((data) => {
+      this.trendyProducts = data;
+    });
   }
   handleQuantity(val: string) {
     if (this.productQuantity < 20 && val === 'plus') {
@@ -63,7 +62,7 @@ export class ProductDetailsComponent {
         // console.log(JSON.parse(user));
 
         let userId = user && JSON.parse(user)[0].id;
-        
+
         console.warn(userId);
         let cartData: cart = {
           ...this.productData,
@@ -79,11 +78,9 @@ export class ProductDetailsComponent {
         });
       }
     }
-    
   }
   removeToCart(productId: number) {
     this.product.removeItemFromCart(productId);
     this.removeCart = false;
   }
-  
 }

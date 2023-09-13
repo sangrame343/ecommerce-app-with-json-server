@@ -29,7 +29,14 @@
         (ngSubmit)="signUpUser(userSignUp.value)"
         action=""
       >
-        <input type="text" ngModel name="name" placeholder="Enter Name" #name="ngModel" required />
+        <input
+          type="text"
+          ngModel
+          name="name"
+          placeholder="Enter Name"
+          #name="ngModel"
+          required
+        />
         <br />
         <p class="invalid-input">
           <span *ngIf="name.invalid && name.touched">
@@ -69,12 +76,12 @@
           >
         </p>
         <br />
-        <br>
+        <br />
 
         <button [disabled]="userSignUp.invalid">User SignUp</button>
       </form>
-    </div>
-    <div *ngIf="showUserLogin" class="inputs">
+      </div>
+     <div *ngIf="showUserLogin" class="inputs">
       <h5>User Login</h5>
       <p class="error-p">{{ authError }}</p>
       <a (click)="openUserSignUp()"
